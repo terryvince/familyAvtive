@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="<%= this.lang %>">
+<head>
+    <title><%=this.assistance %></title>
+    <%- include('template/head.html') %>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="ih-tip-wrap">
+    <img class="ih-tip" src="assert/ih-tip.png" alt="">
+</div>
+<div class="content">
+    <div class="ih">
+        <img class="ih-topic" src="assert/ih-topic.png" alt="">
+        <div class="ih-time color-gold fs-20">今日20:00系统开奖</div>
+        <div class="ih-prize-top flex-main-between row">
+            <div class="flex-main-center flex-wrap col-8">
+                <img style="width:1.3rem;" src="assert/logo.png" alt="">
+                <p class="width-full fs-20 txt-center txt-bold">肖洁洁</p>
+            </div>
+            <div class="flex-align-center flex-wrap col-16 fs-28 color-brown txt-bold lh-1">
+                <p class="width-full">我正在参与“雀神会”每日抽奖</p>
+                <hr size="1" class="dash-line">
+                <p>请您帮我点击一下助力！</p>
+            </div>
+            <div class="ih-prize-ca"></div>
+        </div>
+        <div class="ih-prize-down">
+            <div class="flex-main-center flex-wrap" style="width: 3.62rem">
+                <img style="width:2.7rem;" src="assert/ih-prize-lanyueliang.png" alt="">
+                <div class="product-name txt-center fs-20 color-white">蓝月亮洗衣液5L*6瓶</div>
+            </div>
+        </div>
+        <a class="assistance-btn"></a>
+        <div class="ih-download-border flex-main-between row">
+            <div class="col-8 height-full flex-main-center">
+                <img style="max-width: 80%" src="assert/logo.png" alt="">
+            </div>
+            <div class="download-tip col-16 height-full fs-20 txt-bold" style="padding-right: .1rem">
+                <p>你也可以来玩“雀神会襄阳麻将”</p>
+                <p>每日有抽奖，每周有大奖送出</p>
+                <hr size="1" class="dash-line"/>
+                <div class="fs-32 flex-align-center">
+                    <img style="width: .56rem;" src="assert/ih-download-pointer.png" alt="">&nbsp;
+                    <a class="txt-underline color-default">&nbsp;下载雀神会襄阳麻将</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var $tip = $('.ih-tip-wrap'),
+        $assistanceBtn = $('.assistance-btn');
+    function showTip() {
+        $tip.addClass('visible')
+    }
+    function hideTip() {
+        $tip.removeClass('visible')
+    }
+    $assistanceBtn.one('click',function () {
+        // 助力成功
+        showTip();
+        $assistanceBtn.addClass('success');
+        setTimeout(hideTip,1000);
+    })
+</script>
+</body>
+</html>

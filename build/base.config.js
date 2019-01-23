@@ -19,7 +19,7 @@ let base = {
         contentBase: join(__dirname, '../.temp'),
         compress: true,
         host: '0.0.0.0',
-        port: 9000,
+        port: 9001,
         progress: true,
         hot: true,
         quiet: false,
@@ -46,7 +46,9 @@ let base = {
         familyGetGold: '亲友圈中奖',
         joinGold: '参与亲友圈抽奖',
         appendGold: '追加奖票',
-        endActive: '已开奖，活动结束'
+        endActive: '已开奖，活动结束',
+        inviteHelp: '邀请助力',
+        assistance: '助力好友'
     }
 };
 

@@ -20,23 +20,15 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $(function () {
-        var $dialog = $('.family-dialog');
-        $dialog.click(function () {
-            $(this).removeClass('visible');
-        })
-    })
-</script>
+<%- include('template/ruleModal.html') %>
 <div class="content bg-dark-blue">
-    <div class="active-wrap flex-main-center top-20">
-        <div class="my-active mf-active flex-main-center right-18">
-            <img src="assert/9.png" alt="">
-            <span class="fs-28 color-white">我的活跃度：1300</span>
-        </div>
-        <div class="family-active mf-active flex-main-center">
-            <img src="assert/6.png" alt="">
-            <span class="fs-28 color-white">圈子活跃度：2300</span>
+    <div class="width-full">
+        <img class="width-full" src="assert/active-banner-1.png" alt="">
+    </div>
+    <div class="width-full flex-main-end">
+        <div class="rule-wrap flex-main-center">
+            <i class="icon icon-problem"></i>
+            <span class="fs-24 color-white">&nbsp;活动规则</span>
         </div>
     </div>
     <div class="bg-light-blue main">
@@ -56,7 +48,24 @@
             </div>
         </div>
     </div>
+    <div class="active-wrap flex-main-center top-20" style="margin-bottom: .5rem">
+        <div class="my-active mf-active flex-main-center right-18">
+            <img src="assert/9.png" alt="">
+            <span class="fs-28 color-white">我的活跃度：1300</span>
+        </div>
+        <div class="family-active mf-active flex-main-center">
+            <img src="assert/6.png" alt="">
+            <span class="fs-28 color-white">圈子活跃度：2300</span>
+        </div>
+    </div>
 </div>
-
+<script type="text/javascript">
+    $(function () {
+        var $dialog = $('.family-dialog');
+        $dialog.click(function () {
+            $(this).removeClass('visible');
+        })
+    })
+</script>
 </body>
 </html>

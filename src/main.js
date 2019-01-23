@@ -12,4 +12,14 @@ $(function () {
     $dialog.click(function () {
         $(this).removeClass('visible');
     });
+
+    var $ruleModal = $('.rule-modal-wrap'),
+        $ruleBox  = $('.rule-modal'),
+        $ruleBtn  = $('.rule-wrap');
+    $ruleBtn.click(function () {
+        $ruleModal.addClass('visible');
+    });
+    $ruleBox.click(function () {
+        return false;   //阻止事件冒泡
+    });
 });
