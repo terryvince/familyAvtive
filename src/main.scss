@@ -3,6 +3,7 @@
 @import "sass/base";
 @import "sass/common";
 @import "sass/grid";
+@import "sass/flex";
 @import "sass/text";
 @import "sass/button";
 @import "sass/bars";
@@ -51,6 +52,49 @@
   justify-content:flex-end;
   align-items: center;
   align-content: center;
+}
+.bg-btn-blue{
+  width: 1.5rem;
+  height: .68rem;
+  background: url("assert/btn-blue-bg.png")no-repeat center;
+  background-size: 100% 100%;
+};
+.bg-btn-gray{
+  width: 1.5rem;
+  height: .68rem;
+  background: url("assert/btn-gray-bg.png")no-repeat center;
+  background-size: 100% 100%;
+};
+.bg-btn-red{
+  width: 1.5rem;
+  height: .68rem;
+  background: url("assert/btn-red-bg.png")no-repeat center;
+  background-size: 100% 100%;
+};
+.bg-btn-orange{
+  width: 1.5rem;
+  height: .68rem;
+  background: url("assert/btn-orange-bg.png")no-repeat center;
+  background-size: 100% 100%;
+};
+.down-line{
+  position: relative;
+  @include thinLine(down,#e7e7e7)
+}
+.white-nowrap{
+  white-space: nowrap;
+}
+.color-orange{
+  color: #ff9630;
+}
+.down-10{
+  margin-bottom: .1rem;
+}
+.bg-prize-img{
+  width: 1.4rem;
+  height: .92rem;
+  background: url("assert/prize-img.png")no-repeat center;
+  background-size: 100% 100%;
 }
 .icon-close-white{
   width: .54rem;
@@ -143,6 +187,13 @@
       display: block;
       margin: auto auto;
     }
+  }
+  .g-item{
+    background: #fff;
+    border-radius: .15rem;
+    width: 100%;
+    padding: .18rem;
+    margin-bottom: .2rem;
   }
   .goods-item{
     background: white;
